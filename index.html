@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/meyerweb.css" /> -->
+    <title>ポケモンクイズ</title>
+  </head>
+  <body>
+    <h1>ポケモンの世界にようこそ!</h1>
+    <p id="progress">
+      <span id="current-num">1</span>問目／<span id="max-num"></span>問目
+    </p>
+    <div id="loading">
+      <p class="loading-text">now loading</p>
+      <div class="spinner"></div>
+    </div>
+
+    <div id="zukan">
+      <!-- <button class="next_prev_button" id="prev">前へ</button> -->
+
+      <div class="zukan_screen">
+        <div class="flavor_text">
+          <p id="pokemon-flavor-text" class="pokemon_flavor_text"></p>
+        </div>
+
+        <p id="pokemon-number" class="pokemon_number"></p>
+
+        <div id="sentakusi"></div>
+        <div id="answer-img" class="hide"></div>
+      </div>
+
+      <p id="display-answer" class="display_answer"></p>
+      <img id="pokemon-img" class="pokemon_img" src="" alt="" />
+
+      <br />
+      <button class="next_prev_button" id="next" href="">次へ</button>
+    </div>
+
+    <div id="result" class="hide">
+      <h2>結果発表</h2>
+      <p><span id="correct-count"></span>問正解</p>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

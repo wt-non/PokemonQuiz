@@ -1,0 +1,170 @@
+h1 {
+  font-size: 32px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: all 0.5s linear;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.pokemon_img {
+  width: 100px;
+  height: 100px;
+  margin: 16px;
+}
+
+.spinner {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  border-left-color: #1082ce;
+  animation: spinner-rotation 1s linear infinite;
+}
+
+@keyframes spinner-rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sentakusi {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+  padding: 16px 0;
+  color: black;
+  background-color: #eee;
+  text-decoration: none;
+}
+
+#zukan {
+  text-align: center;
+  width: 100%;
+}
+
+.pokemon-flavor-text {
+  width: 100%;
+  margin: 16px;
+}
+
+.correct {
+  background-color: greenyellow;
+}
+
+.display_answer {
+  font-size: 24px;
+}
+
+.right {
+  width: 150px;
+  height: 150px;
+  border: 30px solid greenyellow;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 105px);
+  left: calc(50% - 105px);
+  opacity: 0.8;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrong {
+  position: relative;
+}
+
+.wrong::before,
+.wrong::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 230px);
+  left: calc(50% - 110px);
+  width: 225px;
+  height: 30px;
+  background-color: red;
+  opacity: 0.8;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.wrong::before {
+  transform: rotate(45deg);
+}
+.wrong::after {
+  transform: rotate(-45deg);
+}
+
+.zukan_screen {
+  position: relative;
+}
+
+#result {
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.next_prev_button {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 0;
+  outline: none;
+  color: #1082ce;
+  border: 1px solid #1082ce;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.next_prev_button:hover {
+  color: #fff;
+  border: 1px solid #1082ce;
+  background-color: #1082ce;
+}
+
+/* 以下はレイアウト調整用 */
+body {
+  vertical-align: middle;
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media screen and(max-width:380px) {
+}
