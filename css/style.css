@@ -1,6 +1,6 @@
 h1 {
   font-size: 32px;
-  margin-top: 32px;
+  margin: 32px auto;
   text-align: center;
 }
 
@@ -166,5 +166,8 @@ body {
   text-align: center;
 }
 
-@media screen and(max-width:380px) {
+@media (max-width: 380px) {
+  h1 {
+    width: 270px;
+  }
 }
